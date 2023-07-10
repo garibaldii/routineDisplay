@@ -10,9 +10,9 @@ body {
 #conteiner {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    column-gap: 8%;
-    row-gap: 5% ;
-    width: 100%;
+    column-gap: 4%;
+    row-gap: 5%;
+    width: 55%;
 }
 
 main {
@@ -25,7 +25,7 @@ main {
 aside {
     display: flex;
     flex-direction: column;
-    margin-right: 5%;
+    margin-right: 3%;
 }
 
 #username {
@@ -39,8 +39,8 @@ aside {
     flex-direction: column;
     background-color: hsl(246, 80%, 60%);
     border-radius: 15px;
-    padding: 15%;
-    margin-bottom: -20px;
+    padding: 10%;
+    margin-bottom: -10px;
     z-index: 2;
     color: white;
     font-weight: 100;
@@ -54,8 +54,8 @@ aside {
     border-end-end-radius: 15px;
     border-end-start-radius: 15px;
     font-size: 120%;
-    padding: 15%;
-    padding-top: 25%;
+    padding: 10%;
+    padding-top: 20%;
     z-index: 1;
 }
 
@@ -70,23 +70,118 @@ a:hover {
     color: hsl(236, 100%, 87%);
 }
 
+a:focus {
+    color: hsl(0, 0%, 97%);
+}
+
 .type {
     display: flex;
     flex-direction: column;
     background-color: hsl(235, 46%, 20%);
     color: white;
     border-radius: 20px;
+    padding: 10%;
 }
 
-.type_hour{
+.type:hover {
+    background-color: hsl(236, 42%, 41%);
+    cursor: pointer;
+    transition: 0.3s ease;
+}
+
+.type_title {
+    font-weight: 400;
+}
+
+#first_part {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.type_hour {
     font-weight: 300;
     font-size: 300%;
     margin: 0px;
-}
-.weekly {
-    display: none;
+    opacity: 0;
+    transition: 0.8s ease;
+    transition-property: opacity, transform;
 }
 
-.monthly {
-    display: none;
+.type_time {
+    opacity: 0;
+    transition: 1s ease;
+    transition-property: opacity, transform;
+}
+
+
+@media(max-width: 950px){
+    #conteiner{
+        display: flex;
+        flex-direction: column ;
+        width: 100%;
+        margin-bottom: 5%;
+    }
+
+    .type{
+        padding: 5%;
+        margin-bottom: 5%;
+    }
+
+    .type_hour{
+        font-size: 100%;
+    }
+    main{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 83%;
+    }
+
+    .daily{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+    }
+    aside{
+        margin-top: 170%;
+        width: 100%;
+        margin-right: 0;
+    }
+
+    #aside_title{
+        flex-direction: row;
+        align-items: center;
+        padding: 30px;
+    }
+
+    #username{
+        font-size: 130%;
+        line-height: 0;
+    }
+
+    #only_media{
+        display: flex;
+        flex-direction: column;
+        margin-left: 5%
+
+    }
+    #aside_body{
+        padding: 5%;
+        padding-top:10%;
+        margin-bottom: 5%;
+    }
+
+    .btn_aside{
+        margin: auto;
+    }
+
+    img{
+        width: 25%;
+    }
+
+    #aside_body{
+        flex-direction: row;
+        justify-content: center;
+    }
 }

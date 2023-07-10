@@ -23,18 +23,20 @@
   <main>
     <aside>
       <section id="aside_title">
-        <img src="images/image-jeremy.png" alt="img_jeremy" width="30%" style=" border: 3px solid white;
+        <img src="images/image-jeremy.png" alt="img_jeremy" width="40%" style=" border: 3px solid white;
         border-radius: 100%">
 
-        <p>Report for</p>
-        <h1 id="username">Jeremy Robson</h1>
+        <div id="only_media">
+          <p>Report for</p>
+          <h1 id="username">Jeremy Robson</h1>
+        </div>
 
       </section>
 
       <section id="aside_body">
-        <a href="#">Daily</a>
-        <a href="#">Weekly</a>
-        <a href="#">Monthly</a>
+        <a href="#" id="daily_btn" onclick="daily()" class="btn_aside"> Daily</a>
+        <a href="#" id="weekly_btn" onclick="weekly()" class="btn_aside">Weekly</a>
+        <a href="#" id="monthly_btn" onclick="monthly()" class="btn_aside">Monthly</a>
       </section>
     </aside>
 
@@ -42,12 +44,19 @@
 
       <section class="type">
 
-        <h3 class="type_title">Work</h3>
+        <section id="first_part">
+          <h3 class="type_title">Work </h3>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+              fill="#BBC0FF" fill-rule="evenodd" />
+          </svg>
+        </section>
 
 
         <section class="daily">
-          <h1 class="type_hour">5hrs</h1> <!-- daily -->
-          <p>Previous - 7hrs</p> <!-- daily -->
+          <h1 class="type_hour">10hrs</h1> <!-- daily -->
+          <p class="type_time">Previous - 7hrs</p> <!-- daily -->
         </section>
 
 
@@ -55,15 +64,22 @@
 
 
 
-
       <section class="type">
 
-        <h3 class="type_title">Play</h3>
+        <section id="first_part">
+          <h3 class="type_title">Play </h3>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+              fill="#BBC0FF" fill-rule="evenodd" />
+          </svg>
+        </section>
+
 
 
         <section class="daily">
           <h1 class="type_hour">1hr</h1> <!-- daily -->
-          <p>Previous - 2hrs</p> <!-- daily -->
+          <p class="type_time">Previous - 2hrs</p> <!-- daily -->
         </section>
 
       </section>
@@ -78,11 +94,18 @@
 
       <section class="type">
 
-        <h3 class="type_title">Study</h3>
+        <section id="first_part">
+          <h3 class="type_title">Study </h3>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+              fill="#BBC0FF" fill-rule="evenodd" />
+          </svg>
+        </section>
 
         <section class="daily">
-          <h1 class="type_hour">0hrs</h1> <!-- daily -->
-          <p>Previous - 1hr</p> <!-- daily -->
+          <h1 class="type_hour">0hr</h1> <!-- daily -->
+          <p class="type_time">Previous - 1hr</p> <!-- daily -->
         </section>
 
       </section>
@@ -96,33 +119,47 @@
 
 
       <section class="type">
-        <h3 class="type_title">Exercise</h3>
-
-
-        <section class="daily">
-          <h1 class="type_hour">1hr</h1> <!-- daily -->
-          <p>Previous - 1hr</p> <!-- daily -->
+        <section id="first_part">
+          <h3 class="type_title">Exercise </h3>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+              fill="#BBC0FF" fill-rule="evenodd" />
+          </svg>
         </section>
-
-      </section>
-
-
-
-
-
-
-
-
-
-
-
-      <section class="type">
-        <h3 class="type_title">Social</h3>
 
 
         <section class="daily">
           <h1 class="type_hour">1hr</h1> <!-- daily -->
-          <p>Previous - 3hrs</p> <!-- daily -->
+          <p class="type_time">Previous - 1hr</p> <!-- daily -->
+        </section>
+
+      </section>
+
+
+
+
+
+
+
+
+
+
+
+      <section class="type">
+        <section id="first_part">
+          <h3 class="type_title">Social </h3>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+              fill="#BBC0FF" fill-rule="evenodd" />
+          </svg>
+        </section>
+
+
+        <section class="daily">
+          <h1 class="type_hour">1hr</h1> <!-- daily -->
+          <p class="type_time">Previous - 3hrs</p> <!-- daily -->
         </section>
 
       </section>
@@ -134,11 +171,18 @@
 
 
       <section class="type">
-        <h3 class="type_title">Self Care</h3>
+        <section id="first_part">
+          <h3 class="type_title">Self Care </h3>
+          <svg width="21" height="5" xmlns="http://www.w3.org/2000/svg">
+            <path
+              d="M2.5 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Zm8 0a2.5 2.5 0 1 1 0 5 2.5 2.5 0 0 1 0-5Z"
+              fill="#BBC0FF" fill-rule="evenodd" />
+          </svg>
+        </section>
 
         <section class="daily">
-          <h1 class="type_hour">0hrs</h1> <!-- daily -->
-          <p>Previous - 1hr</p> <!-- daily -->
+          <h1 class="type_hour">0hr</h1> <!-- daily -->
+          <p class="type_time">Previous - 1hr</p> <!-- daily -->
         </section>
 
       </section>
