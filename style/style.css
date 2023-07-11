@@ -39,7 +39,7 @@ aside {
     flex-direction: column;
     background-color: hsl(246, 80%, 60%);
     border-radius: 15px;
-    padding: 10%;
+    padding: 15%;
     margin-bottom: -10px;
     z-index: 2;
     color: white;
@@ -54,7 +54,7 @@ aside {
     border-end-end-radius: 15px;
     border-end-start-radius: 15px;
     font-size: 120%;
-    padding: 10%;
+    padding: 15%;
     padding-top: 20%;
     z-index: 1;
 }
